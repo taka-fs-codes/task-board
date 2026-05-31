@@ -1,0 +1,121 @@
+.board {
+  width: 100%;
+  max-width: 560px;
+}
+
+.board h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1a1a2e;
+}
+
+/* ---- 入力欄 ---- */
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+
+.input-row input:focus {
+  border-color: #4f6ef7;
+}
+
+.input-row button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #4f6ef7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.input-row button:hover {
+  background: #3a57e8;
+}
+
+/* ---- タスク一覧 ---- */
+.task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.empty {
+  text-align: center;
+  color: #9ca3af;
+  padding: 32px 0;
+  font-size: 0.95rem;
+}
+
+/* ---- 個々のタスク ---- */
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: opacity 0.2s;
+}
+
+.task-item input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: #4f6ef7;
+  cursor: pointer;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* 完了済みスタイル */
+.task-item.done {
+  opacity: 0.5;
+}
+
+.task-item.done .task-text {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+/* 削除ボタン */
+.delete-btn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  color: #ef4444;
+  background: #fef2f2;
+}
