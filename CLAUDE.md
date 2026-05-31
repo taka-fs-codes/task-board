@@ -1,5 +1,11 @@
 # CLAUDE.md — task-board
 
+## GitHubリポジトリ
+
+https://github.com/taka-fs-codes/task-board
+
+---
+
 ## プロジェクト概要
 
 タスク管理ボードアプリケーション。
